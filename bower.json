@@ -1,0 +1,21 @@
+{
+  "name": "udemy-angular",
+  "description": "",
+  "main": "",
+  "authors": [
+    "bnamqui <baron.namqui>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cnamqui/udemy-angular",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  }
+}
