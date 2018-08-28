@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { ServerComponent } from './server/server.component';
 import { ServerAltComponent } from './server-alt/server-alt.component';
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
   declarations: [
@@ -13,9 +15,10 @@ import { ServerAltComponent } from './server-alt/server-alt.component';
     SuccessAlertComponent,
     WarningAlertComponent,
     ServerComponent,
-    ServerAltComponent
+    ServerAltComponent,
+    ServersComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
