@@ -1,3 +1,14 @@
-<p>
-  Server with ID {{serverId}} is {{getServerStatus()}}
-</p>
+<div class="row server-component-container">
+  <div
+    class="server-component"
+    [ngStyle]="{backgroundColor: getBackgroundColor(), borderColor: getBorderColor(),color:getColor()}"
+  >
+    Server with ID {{serverId}} is {{getServerStatus()}}
+  </div>
+  <div
+    class="server-component"
+    [ngStyle]="getStyle()"
+  >
+    Server with ID {{serverId}} is {{getServerStatus()}}
+  </div>
+</div>

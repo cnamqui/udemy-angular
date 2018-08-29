@@ -1,0 +1,16 @@
+.server-component {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.server-component-container {
+  margin: 10px 0
+}
