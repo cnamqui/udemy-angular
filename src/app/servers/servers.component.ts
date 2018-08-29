@@ -7,23 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   allowNewServer = false;
-  serverCreationStatus = 'No Server was created';
+  serverCreationStatus = '';
   serverName: string;
-  // classes = 'btn btn-primary';
-  // classes = {
-  //   btn: true,
-  //   'btn-primary': false,
-  //   'btn-warning': true
-  // };
-  // constructor() {
-  //   setTimeout(() => {
-  //     this.allowNewServer = true;
-  //   }, 1000);
-  // }
+  serverCreated = false;
 
   ngOnInit() {}
 
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus =
       'A Server was created successfully: Name is ' + this.serverName;
   }
