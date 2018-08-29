@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = 'No Server was created';
-  serverName = 'Server Name';
+  serverName: string;
   // classes = 'btn btn-primary';
   // classes = {
   //   btn: true,
