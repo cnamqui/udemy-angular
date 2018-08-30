@@ -14,3 +14,15 @@
 .server-component-container {
   margin: 10px 0
 }
+
+.server-offline {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  color: #000;
+}
+
+.server-online {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #fff;
+}

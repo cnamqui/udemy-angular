@@ -1,14 +1,39 @@
 <div class="row server-component-container">
-  <div
+
+  <!-- NG STYLE example -->
+  <!-- <div
     class="server-component"
     [ngStyle]="{backgroundColor: getBackgroundColor(), borderColor: getBorderColor(),color:getColor()}"
   >
     Server with ID {{serverId}} is {{getServerStatus()}}
-  </div>
-  <div
+  </div> -->
+  <!-- NG STYLE example  END-->
+
+  <!-- NG STYLE with Object example -->
+  <!-- <div
     class="server-component"
     [ngStyle]="getStyle()"
   >
     Server with ID {{serverId}} is {{getServerStatus()}}
+  </div> -->
+  <!-- NG STYLE with Object example END -->
+<!-- ********************************************************************************************** -->
+
+<!-- NG CLASS with string example -->
+  <!-- <div
+    class="server-component"
+    [ngClass]="serverComponentClass"
+  >
+    Server with ID {{serverId}} is {{getServerStatus()}}
+  </div> -->
+  <!-- NG CLASS with string example END-->
+
+  <!-- NG CLASS with JSON example -->
+  <div
+    class="server-component"
+    [ngClass]="{'server-offline': serverStatus === 'offline', 'server-online': serverStatus === 'online'}"
+  >
+    Server with ID {{serverId}} is {{getServerStatus()}}
   </div>
+  <!-- NG CLASS with JSON example END-->
 </div>
