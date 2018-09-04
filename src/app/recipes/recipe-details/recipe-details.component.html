@@ -1,3 +1,28 @@
-<p>
-  I'm the details for your recipe
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <img [src]="recipe.imagePath"
+         alt=""
+         class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{recipe.name}}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn btn-group dropdown">
+      <button class="btn btn-primary dropdown-toggle">
+        Manage
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Add to cart</a></li>
+        <li><a href="#">Edit Recipe</a></li>
+        <li><a href="#">Delete</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
